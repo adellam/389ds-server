@@ -74,6 +74,7 @@ dirsrv_allow_other_schema_files: false
 # Security
 
 dirsrv_tls_enabled: false
+dirsrv_starttls_early: '{{ dirsrv_tls_enabled }}'
 dirsrv_tls_min_version: '1.2'
 dirsrv_tls_certificate_trusted: true  # As in, "publicly trusted because it's signed by a public and recognized CA"
 dirsrv_tls_enforced: false
